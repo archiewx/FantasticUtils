@@ -1,7 +1,7 @@
 {
-  "name": "gm-utils",
+  "name": "fantistic-utils",
   "version": "0.0.1",
-  "description": "gm's utils",
+  "description": "fantistic js utils",
   "main": "/dist/gm-utils.min.js",
   "scripts": {
     "dev": "rollup -c --watch",
@@ -38,7 +38,5 @@
     "rollup-plugin-flow": "^1.1.1",
     "rollup-plugin-uglify": "^3.0.0"
   },
-  "dependencies": {
-    "un": "0.0.0"
-  }
+  "dependencies": {}
 }
