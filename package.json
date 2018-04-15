@@ -1,8 +1,8 @@
 {
   "name": "fantistic-utils",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "fantistic js utils",
-  "main": "/dist/gm-utils.min.js",
+  "main": "dist/gm-utils.min.js",
   "scripts": {
     "dev": "rollup -c --watch",
     "build": "rollup -c",
