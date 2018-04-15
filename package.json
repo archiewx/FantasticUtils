@@ -1,0 +1,44 @@
+{
+  "name": "gm-utils",
+  "version": "0.0.1",
+  "description": "gm's utils",
+  "main": "/dist/gm-utils.min.js",
+  "scripts": {
+    "dev": "rollup -c --watch",
+    "build": "rollup -c",
+    "flow": "flow check",
+    "eslint": "eslint src/**",
+    "eslint:fix": "eslint src/** --fix"
+  },
+  "keywords": [
+    "native-js",
+    "utils",
+    "tool",
+    "vue",
+    "react"
+  ],
+  "author": "zhenglfsir@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-flowtype": "^2.46.2",
+    "eslint-plugin-import": "^2.11.0",
+    "flow-bin": "^0.69.0",
+    "jest": "^22.4.3",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-eslint": "^4.0.0",
+    "rollup-plugin-flow": "^1.1.1",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "un": "0.0.0"
+  }
+}

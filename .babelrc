@@ -1,0 +1,4 @@
+{
+  "presets": [["es2015-rollup"], "stage-0", "flow"],
+  "plugins": ["transform-object-assign"]
+}
