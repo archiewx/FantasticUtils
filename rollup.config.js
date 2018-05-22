@@ -1,8 +1,9 @@
 import uglify from 'rollup-plugin-uglify'
 import babel from 'rollup-plugin-babel'
 import eslint from 'rollup-plugin-eslint'
+import flow from 'rollup-plugin-flow'
 
-const plugins = [eslint(), babel()]
+const plugins = [eslint(), flow(), babel()]
 
 const commonConf = {
   banner: '',

@@ -6,6 +6,8 @@
 ./node_modules
 ./.*.*
 [libs]
+./src/flow-typed
+
 [lints]
 [options]
 [version]

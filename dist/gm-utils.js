@@ -30,6 +30,17 @@
     return false;
   }
 
+  function range() {
+    var min = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+    var max = arguments[1];
+
+    var arr = [];
+    for (var i = min; i < max; i += 1) {
+      arr.push(i);
+    }
+    return arr;
+  }
+
   /**
    * todo:
    * 1. 支持普通调用
@@ -39,6 +50,7 @@
    */
 
   exports.empty = empty;
+  exports.range = range;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 

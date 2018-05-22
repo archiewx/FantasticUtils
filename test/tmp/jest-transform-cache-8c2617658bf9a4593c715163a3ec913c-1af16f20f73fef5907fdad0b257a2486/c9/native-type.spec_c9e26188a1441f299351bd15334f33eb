@@ -1,0 +1,16 @@
+77082067a147983e52211a7849f14bcc
+'use strict';
+
+var _nativeTypes = require('../../src/base/native-types');
+
+var _nativeTypes2 = babelHelpers.interopRequireDefault(_nativeTypes);
+
+it('对象类型', function () {
+  expect((0, _nativeTypes2.default)('zhangsn')).toEqual('String');
+  // expect(getTypes([])).toEqual('Array')
+  // expect(getTypes({})).toEqual('Object')
+  // expect(getTypes(1)).toEqual('Number')
+  // expect(getTypes(true)).toEqual('Boolean')
+  // expect(getTypes(() => {})).toEqual('Function')
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5hdGl2ZS10eXBlLnNwZWMuanMiXSwibmFtZXMiOlsiaXQiLCJleHBlY3QiLCJ0b0VxdWFsIl0sIm1hcHBpbmdzIjoiOztBQUFBOzs7O0FBRUFBLEdBQUcsTUFBSCxFQUFXLFlBQU07QUFDZkMsU0FBTywyQkFBUyxTQUFULENBQVAsRUFBNEJDLE9BQTVCLENBQW9DLFFBQXBDO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNELENBUEQiLCJmaWxlIjoibmF0aXZlLXR5cGUuc3BlYy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBnZXRUeXBlcyBmcm9tICcuLi8uLi9zcmMvYmFzZS9uYXRpdmUtdHlwZXMnXG5cbml0KCflr7nosaHnsbvlnosnLCAoKSA9PiB7XG4gIGV4cGVjdChnZXRUeXBlcygnemhhbmdzbicpKS50b0VxdWFsKCdTdHJpbmcnKVxuICAvLyBleHBlY3QoZ2V0VHlwZXMoW10pKS50b0VxdWFsKCdBcnJheScpXG4gIC8vIGV4cGVjdChnZXRUeXBlcyh7fSkpLnRvRXF1YWwoJ09iamVjdCcpXG4gIC8vIGV4cGVjdChnZXRUeXBlcygxKSkudG9FcXVhbCgnTnVtYmVyJylcbiAgLy8gZXhwZWN0KGdldFR5cGVzKHRydWUpKS50b0VxdWFsKCdCb29sZWFuJylcbiAgLy8gZXhwZWN0KGdldFR5cGVzKCgpID0+IHt9KSkudG9FcXVhbCgnRnVuY3Rpb24nKVxufSlcbiJdfQ==

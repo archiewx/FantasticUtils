@@ -18,37 +18,18 @@ module.exports = {
   },
   // check if imports actually resolve
   // add your custom rules here
+  globals: {
+    self: true
+  },
   rules: {
     semi: ['error', 'never'],
+    'function-paren-newline': [0],
+    'no-param-reassign': [0],
     'comma-dangle': ['error', 'never'],
-    'import/extensions': [
-      'error',
-      'always',
-      {
-        js: 'never',
-        ts: 'never'
-      }
-    ],
+    'arrow-parens': ['error', 'always'],
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions
-    'no-param-reassign': [
-      'error',
-      {
-        props: true,
-        ignorePropertyModificationsFor: [
-          'state', // for vuex state
-          'acc', // for reduce accumulators
-          'e' // for e.returnvalue
-        ]
-      }
-    ],
-    // allow optionalDependencies
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        optionalDependencies: ['test/unit/index.js']
-      }
-    ],
+    'no-param-reassign': ['off'],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }

@@ -5,4 +5,9 @@
  * 3. 支持react
  * 4. 支持浏览器环境
  */
+
+// base
 export empty from './base/empty'
+
+// array
+export range from './array/range'

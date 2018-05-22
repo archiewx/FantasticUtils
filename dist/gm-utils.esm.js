@@ -24,6 +24,17 @@ function empty(mix) {
   return false;
 }
 
+function range() {
+  var min = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  var max = arguments[1];
+
+  var arr = [];
+  for (var i = min; i < max; i += 1) {
+    arr.push(i);
+  }
+  return arr;
+}
+
 /**
  * todo:
  * 1. 支持普通调用
@@ -32,4 +43,4 @@ function empty(mix) {
  * 4. 支持浏览器环境
  */
 
-export { empty };
+export { empty, range };
