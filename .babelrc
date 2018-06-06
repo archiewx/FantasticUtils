@@ -1,9 +1,5 @@
 {
-  "presets": [["es2015-rollup"], "env"],
+  "presets": [["es2015-rollup"], "env", "flow"],
   "plugins": ["transform-object-assign"],
-  "env": {
-    "test": {
-      "presets": [["env", { "targets": { "node": "current" } }]]
-    }
-  }
+  "env": {}
 }

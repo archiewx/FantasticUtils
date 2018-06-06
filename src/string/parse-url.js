@@ -2,7 +2,7 @@
  * url 解析
  * @flow
  */
-import root from './base/root'
+import root from '../base/root'
 
 function parseUrl(url: string): {} | null {
   url = url || (root.location && root.location.href) || ''

@@ -3,7 +3,7 @@
  * @flow
  */
 
-const browserList: Browser[] = [
+const browserList: BrowserType[] = [
   { name: 'Firefox', inspecter: 'Firefox', engine: 'Gecko' },
   { name: 'Chrome', inspecter: 'Chrome', engine: 'AppleWebkit' },
   { name: 'Chromium', inspecter: 'Chromium', engine: 'Blink' },
@@ -19,7 +19,7 @@ const browserList: Browser[] = [
 /**
  * 解析userAgent
  */
-function clientInfo(): Environment | null {
+export function clientInfo(): Environment | null {
   if (!window) {
     return null
   }
@@ -30,10 +30,19 @@ function clientInfo(): Environment | null {
   const os: string = environment[0] || ''
   const cpu: string = environment[2] || ''
   const osVersion = environment[environment.length - 1]
-  const browser: Browser = browserList.find((item) => {
-    return userAgent.indexOf(item.inspecter) !== -1
-  })
-  return { os, osVersion, cpu, browser: browser.name, engine: browser.engine }
+  const browser: BrowserType | void = browserList.find(
+    (item: BrowserType) => userAgent.indexOf(item.inspecter) !== -1
+  )
+  if (browser) {
+    return {
+      os,
+      osVersion,
+      cpu,
+      browser: browser.name,
+      engine: browser.engine
+    }
+  }
+  return null
 }
 
 export default clientInfo

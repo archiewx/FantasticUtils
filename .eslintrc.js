@@ -31,6 +31,9 @@ module.exports = {
     // disallow parameter object manipulation except for specific exclusions
     'no-param-reassign': ['off'],
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-underscore-dangle': [0],
+    'import/no-extraneous-dependencies': [0],
+    'no-console': [0]
   }
 }
